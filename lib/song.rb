@@ -33,13 +33,9 @@ class Song
   end
 
   def self.find_by_name(string_name)
-    # binding.pry
     @@all.find do |n|
       n.name == string_name
     end
-    # return false
-    binding.pry
-
   end
 
 
