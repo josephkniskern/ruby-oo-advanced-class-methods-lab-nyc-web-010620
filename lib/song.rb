@@ -39,7 +39,7 @@ class Song
   end
 
   def self.find_or_create_by_name(string_name)
-    if self.find_by_name(song) == string_name
+    if self.find_by_name(string) == string_name
       return string_name
     else
       self.create_by_name(string_name)
