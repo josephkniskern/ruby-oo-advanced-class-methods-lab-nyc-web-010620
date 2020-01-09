@@ -40,10 +40,9 @@ class Song
 
   def self.find_or_create_by_name(string_name)
     if self.find_by_name(string_name) == string_name
-      string_name
+      return string_name
     else
       self.create_by_name(string_name)
-      binding.pry
     end
   end
 
